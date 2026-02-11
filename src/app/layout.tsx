@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className={shabnam.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-red-500`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
         <QueryProvider>
         {children}
