@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { sendOTP, verifyOTP } from "@/public/mock/mockAuth"
+import Cookies from 'js-cookie'
 
 type Callbacks = {
   onSuccess: (data?: any) => void
@@ -45,6 +46,15 @@ export function useLoginService() {
       const result = await verifyOTP(phone, code)
       
       if (result.success && result.token) {
+        Cookies.set('authToken', result.token, {
+          expires: 7, 
+          path: '/',
+          sameSite: 'lax',
+          secure: process.env.NODE_ENV === 'production'
+        })
+        
+        localStorage.setItem("authToken", result.token)
+        
         callbacks.onSuccess(result.token)
       } else {
         const errorMsg = result.message || "کد تأیید اشتباه است"
@@ -64,6 +74,11 @@ export function useLoginService() {
     setSendError(undefined)
     setVerifyError(undefined)
   }
+  const setManualSendError = (error: string) => setSendError(error)
+  const setManualVerifyError = (error: string) => setVerifyError(error)
+  
+  const clearSendError = () => setSendError(undefined)
+  const clearVerifyError = () => setVerifyError(undefined)
 
   return {
     isSending,
@@ -73,5 +88,9 @@ export function useLoginService() {
     sendOtp,
     verifyOtp,
     reset,
+    setManualSendError,
+    setManualVerifyError,
+    clearSendError,
+    clearVerifyError,
   }
 }

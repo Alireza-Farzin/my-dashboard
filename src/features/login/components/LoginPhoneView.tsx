@@ -48,7 +48,7 @@ export default function LoginPhoneView({
                 dir="ltr"
                 value={phone}
                 onChange={(e) => onPhoneChange(e.target.value.replace(/\D/g, "").slice(0, 11))}
-                className="h-12 text-lg text-center font-medium border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                className="h-12 text-lg text-center text-black font-medium border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 disabled={isLoading}
               />
               {phone && phone.length === 11 && (

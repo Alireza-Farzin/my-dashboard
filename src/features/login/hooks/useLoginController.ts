@@ -68,10 +68,11 @@ export function useLoginController() {
     service.verifyOtp(phone, otp, {
       onSuccess: (token) => {
         localStorage.setItem("authToken", token)
-        router.replace("/dashboard")
+        router.replace("/")
       },
       onError: (error) => {
         console.error("Verify OTP failed:", error)
+        console.error("Error during OTP verification:", error);
       }
     })
   }

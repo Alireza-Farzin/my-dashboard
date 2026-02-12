@@ -62,7 +62,7 @@ export default function LoginOtpView({
                 maxLength={6}
                 value={otp}
                 onChange={(e) => onOtpChange(e.target.value.replace(/\D/g, "").slice(0, 6))}
-                className="h-14 text-center text-2xl font-bold tracking-widest border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-500"
+                className="h-14 text-center text-black text-2xl font-bold tracking-widest border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-500"
                 placeholder="- - - - - -"
                 dir="ltr"
                 disabled={isLoading}

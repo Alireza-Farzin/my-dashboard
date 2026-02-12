@@ -1,0 +1,1 @@
+export {default as MyCustomNotFoundPage} from "./views/index"

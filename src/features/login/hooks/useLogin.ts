@@ -40,17 +40,11 @@ export function useLogin() {
     onSuccess: (data) => {
       console.log("ورود موفق", data.token)
       
-      // ذخیره توکن
       if (data.token) {
         localStorage.setItem("authToken", data.token)
       }
-      
-      // FIX: redirect به داشبورد (نه صفحه خالی!)
-      // از replace استفاده کنید تا از infinite loop جلوگیری شود
-      router.replace("/dashboard")
-      
-      // اگر صفحه dashboard ندارید، به "/" یا صفحه اصلی redirect کنید:
-      // router.replace("/")
+   
+      router.replace("/")
     },
   })
 
@@ -62,7 +56,6 @@ export function useLogin() {
     } catch (error) {
       if (error instanceof z.ZodError) {
         sendMutation.reset()
-        // می‌توانید error را در UI نمایش دهید
       }
     }
   }
