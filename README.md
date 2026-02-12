@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# پروژه تست فنی - داشبورد مدیریتی
 
-## Getting Started
+یه داشبورد کامل با Next.js ساختم که شامل ورود، مدیریت کاربران و لیست بازی‌ها میشه.
 
-First, run the development server:
+##  نصب و اجرا
 
+اول پکیج‌ها رو نصب کن:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+بعد پروژه رو اجرا کن:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+حالا برو به `http://localhost:3000` و ببین چیکار کرده! 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ورود به سیستم
 
-## Learn More
+برای ورود:
+1. یه شماره موبایل وارد کن (مثلاً: 09123456789)
+2.  **کد پیش‌فرض: 123456** هست
+3. این کد رو وارد کن و بزن رو تأیید
 
-To learn more about Next.js, take a look at the following resources:
+##  صفحات
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### داشبورد اصلی
+- چندتا کارت با آمار
+- منوی کناری برای رفتن به بخش‌های مختلف
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### کاربران
+- لیست کاربرا با جدول
+- فیلتر جستجو، جنسیت و سن
+- داده‌ها از DummyJSON میاد
 
-## Deploy on Vercel
+### بازی‌ها
+- لیست بازی‌ها با کارت
+- فیلتر ژانر، سال انتشار و امتیاز
+- Infinite Scroll داره - یعنی وقتی پایین می‌ری خودکار بارگذاری میشه
+- صفحه جزئیات هر بازی
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  ویژگی‌ها
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **دارک مود**: کل پروژه دارک مود حرفه‌ای داره
+- **فیلترهای پیشرفته**: تو صفحه بازی‌ها و کاربران میتونی خیلی راحت فیلتر کنی
+- **Select پیشرفته**: یه کامپوننت Select با جستجو، انتخاب چندتایی و... ساختم
+- **Infinite Scroll**: صفحه بازی‌ها با اسکرول بارگذاری میشه
+- **Responsive**: تو موبایل و تبلت هم خوب کار میکنه
+
+## 🛠 تکنولوژی‌ها
+
+- **Next.js 15**: فریم‌ورک اصلی
+- **React Query**: برای مدیریت دیتا و کش
+- **Tailwind CSS**: برای استایل‌دهی
+- **Headless UI**: برای کامپوننت Select
+- **TypeScript**: برای Type Safety
+
+##  ساختار پروژه
+```
+src/
+├── features/          # هر feature تو یه فولدر جداست
+│   ├── login/        # صفحه ورود
+│   ├── users/        # صفحه کاربران
+│   ├── games/        # صفحه بازی‌ها
+│   └── GameDetail/   # جزئیات بازی
+├── components/       # کامپوننت‌های مشترک
+│   ├── ui/          # کامپوننت‌های shadcn/ui
+│   └── AdvancedSelect/  # Select پیشرفته
+└── data/            # دیتاهای استاتیک (JSON)
+
+
+##  نکات مهم
+
+- کد OTP همیشه **123456** هست (برای تست راحت‌تره)
+- داده‌های کاربران از `dummyjson.com` میاد
+- داده‌های بازی‌ها از یه فایل JSON محلی میاد
+- همه چی با React Query مدیریت میشه پس کش خوبی داره
+
+##  چالش‌های پیاده شده
+
+داشبورد کامل با DummyJSON  
+صفحه بازی‌ها با فیلتر و جزئیات  
+کامپوننت Select پیشرفته  
+فیلترها و جستجو  
+Infinite Scroll  
+لاگین با OTP  
