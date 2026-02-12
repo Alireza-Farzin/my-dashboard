@@ -9,14 +9,13 @@ export default function QueryProvider({
 }: {
   children: React.ReactNode
 }) {
-  // جلوگیری از ساخت مجدد QueryClient در هر رندر
   const [queryClient] = useState(
     () =>
       new QueryClient({
         defaultOptions: {
           queries: {
-            staleTime: 1000 * 60, // 1 دقیقه
-            gcTime: 1000 * 60 * 5, // 5 دقیقه
+            staleTime: 1000 * 60, 
+            gcTime: 1000 * 60 * 5, 
             retry: 1,
             refetchOnWindowFocus: false,
           },

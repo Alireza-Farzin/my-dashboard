@@ -2,27 +2,28 @@
 
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/navigation'
+import { useState } from 'react';
 
 export function useLogout() {
+  const [showLogoutDialog, setShowLogoutDialog] = useState(false);
   const router = useRouter()
 
   const logout = () => {
-    // پاک کردن توکن از کوکی
     Cookies.remove('authToken')
-    
-    // پاک کردن توکن از localStorage
+
     localStorage.removeItem('authToken')
-    
-    // هدایت به صفحه لاگین
     router.push('/login')
   }
+  const handleLogout = () => {
+    logout();
+    setShowLogoutDialog(false);
+  };
 
-  return { logout }
+  return { logout, handleLogout, showLogoutDialog, setShowLogoutDialog }
 }
-
-// یا به صورت تابع ساده:
 export function logoutUser() {
   Cookies.remove('authToken')
   localStorage.removeItem('authToken')
   window.location.href = '/login'
 }
+
