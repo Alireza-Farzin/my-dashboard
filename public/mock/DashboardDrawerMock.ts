@@ -22,18 +22,18 @@ export const panelDrawerMock: PanelMenuMock[] = [
     link: "/users",
     visible: ["admin", "user"],
   },
-  {
-    text: "محصولات جدید",
-    icon: ShoppingBag,
-    link: "/profile/agencymanager",
-    visible: ["admin", "user"],
-  },
-  {
-    text: "داشبورد",
-    icon: Home,
-    link: "/",
-    visible: ["admin", "user"],
-  },
+  // {
+  //   text: "محصولات جدید",
+  //   icon: ShoppingBag,
+  //   link: "/profile/agencymanager",
+  //   visible: ["admin", "user"],
+  // },
+  // {
+  //   text: "داشبورد",
+  //   icon: Home,
+  //   link: "/",
+  //   visible: ["admin", "user"],
+  // },
   {
     text: "بازی‌ها",
     icon: Gamepad2,
