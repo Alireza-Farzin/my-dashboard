@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
-import ImageDefault from "@/public/images/default.avif";
+import ImageDefault from "@/public/images/default.png";
 import { AdvancedSelect, SelectOption } from "@/src/components/AdvancedSelect/AdvancedSelect";
 
 import { useGames } from "../hooks/useGames";
@@ -254,12 +254,6 @@ const allGames = useMemo(() => data?.pages.flat() ?? [], [data]);
             <Loader2 className="h-5 w-5 animate-spin" />
             <span>در حال بارگذاری بیشتر...</span>
           </div>
-        )}
-
-        {!hasNextPage && allGames.length > 0 && !isFetchingNextPage && (
-          <p className="text-muted-foreground text-sm">
-            همه بازی‌ها بارگذاری شدند
-          </p>
         )}
       </div>
 

@@ -123,27 +123,13 @@ export function AdvancedSelect({
     </Listbox.Option>
   )
 
-  const renderVirtualizedOptions = () => {
-    const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
-      const option = filteredOptions[index]
-      return (
-        <div style={style}>
-          {renderOption(option)}
-        </div>
-      )
-    }
-
-    return (
-      <List
-        height={300}
-        itemCount={filteredOptions.length}
-        itemSize={48}
-        width="100%"
-      >
-        {Row}
-      </List>
-    )
-  }
+const renderVirtualizedOptions = () => {
+  return (
+    <div className="max-h-[300px] overflow-auto">
+      {filteredOptions.map(option => renderOption(option))}
+    </div>
+  )
+}
 
   const renderGroupedOptions = () => (
     <>

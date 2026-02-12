@@ -13,25 +13,21 @@ export interface Game {
 const PAGE_SIZE = 8;
 
 export function useGames() {
-  return useInfiniteQuery<Game[], Error, Game[], ["games"], number>({
+  return useInfiniteQuery({
     queryKey: ["games"],
     queryFn: async ({ pageParam = 0 }) => {
       await new Promise((res) => setTimeout(res, 400));
       const start = pageParam * PAGE_SIZE;
       const end = start + PAGE_SIZE;
-
       return gamesData.slice(start, end);
     },
     getNextPageParam: (lastPage, allPages) => {
       const loadedItems = allPages.flat().length;
-
       if (loadedItems >= gamesData.length) {
         return undefined;
       }
-
       return allPages.length;
     },
     initialPageParam: 0,
   });
-
 }

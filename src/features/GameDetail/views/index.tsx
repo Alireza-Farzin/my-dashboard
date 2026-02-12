@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Star, ArrowRight, Calendar, Loader2 } from "lucide-react";
 import { useGame } from "../hooks/useGame";
 import { useRouter } from "next/navigation";
-import ImageDefault from "@/public/images/default.avif";
+import ImageDefault from "@/public/images/default.png";
 
 interface Props {
   id: string;
@@ -16,10 +16,6 @@ interface Props {
 export default function GameDetailPage({ id }: Props) {
   const router = useRouter();
   const gameId = Number(id);
-
-  console.log("🎮 Game ID from URL:", id);
-  console.log("🔢 Converted to number:", gameId);
-  console.log("✅ Is valid number:", !isNaN(gameId));
 
   const { data: game, isLoading, error } = useGame(gameId);
 
@@ -65,7 +61,6 @@ export default function GameDetailPage({ id }: Props) {
 
   return (
     <div className="space-y-8">
-      {/* Header با دکمه بازگشت */}
       <div className="flex items-center gap-4">
         <Button
           onClick={() => router.back()}
@@ -92,7 +87,6 @@ export default function GameDetailPage({ id }: Props) {
       </div>
 
       <div className="grid gap-8 lg:grid-cols-3">
-        {/* تصویر اصلی */}
         <div className="lg:col-span-2">
           <div className="relative aspect-video rounded-xl overflow-hidden border border-[#fcfcfc14] bg-[#171717]">
             <Image
@@ -106,11 +100,9 @@ export default function GameDetailPage({ id }: Props) {
           </div>
         </div>
 
-        {/* اطلاعات جانبی */}
         <div className="space-y-6">
           <Card className="border-[#fcfcfc14] bg-[#171717]">
             <CardContent className="pt-6 space-y-6">
-              {/* امتیاز */}
               <div className="flex items-center justify-between pb-6 border-b border-[#fcfcfc14]">
                 <span className="text-lg font-medium text-muted-foreground">امتیاز</span>
                 <div className="flex items-center gap-2">
@@ -120,7 +112,6 @@ export default function GameDetailPage({ id }: Props) {
                 </div>
               </div>
 
-              {/* تاریخ انتشار */}
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Calendar className="h-4 w-4" />
@@ -136,7 +127,6 @@ export default function GameDetailPage({ id }: Props) {
                 </div>
               </div>
 
-              {/* ژانرها */}
               <div className="pt-6 border-t border-[#fcfcfc14]">
                 <span className="text-sm text-muted-foreground block mb-3">ژانرها</span>
                 <div className="flex flex-wrap gap-2">
@@ -153,7 +143,6 @@ export default function GameDetailPage({ id }: Props) {
             </CardContent>
           </Card>
 
-          {/* دکمه‌های عملیات */}
           <div className="space-y-3">
             <Button className="w-full h-12">
               افزودن به علاقه‌مندی‌ها
@@ -168,7 +157,6 @@ export default function GameDetailPage({ id }: Props) {
         </div>
       </div>
 
-      {/* اطلاعات اضافی */}
       <Card className="border-[#fcfcfc14] bg-[#171717]">
         <CardContent className="pt-6">
           <h2 className="text-xl font-semibold mb-4">درباره بازی</h2>
