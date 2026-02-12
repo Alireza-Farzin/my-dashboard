@@ -1,11 +1,5 @@
-import React from 'react'
+import { GamesPage } from "@/src/features/games";
 
-const page = () => {
-  return (
-    <div>
-            
-    </div>
-  )
+export default function Page() {  
+  return <GamesPage />
 }
-
-export default page

@@ -1,0 +1,242 @@
+ [
+  {
+    "id": 1,
+    "name": "ماینکرفت",
+    "released": "2011-11-18",
+    "rating": 9.2,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+    "genres": ["ساخته‌سازی", "ماجراجویی"]
+  },
+  {
+    "id": 2,
+    "name": "GTA V",
+    "released": "2013-09-17",
+    "rating": 9.6,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+    "genres": ["اکشن", "ماجراجویی"]
+  },
+  {
+    "id": 3,
+    "name": "Red Dead Redemption II",
+    "released": "2018-10-26",
+    "rating": 9.8,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+    "genres": ["اکشن", "ماجراجویی"]
+  },
+  {
+    "id": 4,
+    "name": "پابجی",
+    "released": "2017-12-20",
+    "rating": 8.5,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/4/49/PUBG_cover.jpg",
+    "genres": ["بقا", "اکشن"]
+  },
+  {
+    "id": 5,
+    "name": "تتریس",
+    "released": "1984-06-06",
+    "rating": 8.9,
+    "background_image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Tetris_Game.jpg",
+    "genres": ["پازل"]
+  },
+  {
+    "id": 6,
+    "name": "Angry Birds",
+    "released": "2009-12-11",
+    "rating": 7.5,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Angry_Birds_cover.png",
+    "genres": ["پازل", "کژوال"]
+  },
+  {
+    "id": 7,
+    "name": "هالو",
+    "released": "2001-11-15",
+    "rating": 9.3,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/5/50/Halo_CE_Box_Art.jpg",
+    "genres": ["اکشن", "شوتر"]
+  },
+  {
+    "id": 8,
+    "name": "آخرین ما",
+    "released": "2013-06-14",
+    "rating": 9.7,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/4/44/The_Last_of_Us_cover.jpg",
+    "genres": ["اکشن", "ماجراجویی"]
+  },
+  {
+    "id": 9,
+    "name": "افسانه زلدا: اوکارینا زمان",
+    "released": "1998-11-21",
+    "rating": 10.0,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/1/1b/The_Legend_of_Zelda_Ocarina_of_Time.jpg",
+    "genres": ["ماجراجویی"]
+  },
+  {
+    "id": 10,
+    "name": "Super Mario Bros",
+    "released": "1985-09-13",
+    "rating": 9.4,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png",
+    "genres": ["پلتفرمر"]
+  },
+  {
+    "id": 11,
+    "name": "سایلنت هیل ۲",
+    "released": "2001-09-24",
+    "rating": 9.1,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/4/43/Silent_Hill_2_Box.jpg",
+    "genres": ["ترسناک", "اجتماعی"]
+  },
+  {
+    "id": 12,
+    "name": "Dark Souls",
+    "released": "2011-09-22",
+    "rating": 9.0,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Dark_Souls_Box_Art.jpg",
+    "genres": ["اکشن", "RPG"]
+  },
+  {
+    "id": 13,
+    "name": "Elden Ring",
+    "released": "2022-02-25",
+    "rating": 9.5,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/4/4c/Elden_Ring_cover.jpg",
+    "genres": ["اکشن", "RPG"]
+  },
+  {
+    "id": 14,
+    "name": "Hollow Knight",
+    "released": "2017-02-24",
+    "rating": 9.3,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/3/3a/Hollow_Knight.jpg",
+    "genres": ["اکشن", "پلتفرمر"]
+  },
+  {
+    "id": 15,
+    "name": "Resident Evil 4",
+    "released": "2005-01-11",
+    "rating": 9.2,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/6/69/Resident_Evil_4_box_art.jpg",
+    "genres": ["ترسناک", "اکشن"]
+  },
+  {
+    "id": 16,
+    "name": "Call of Duty: Modern Warfare",
+    "released": "2019-10-25",
+    "rating": 8.8,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Call_of_Duty_Modern_Warfare.jpg",
+    "genres": ["شوتر", "اکشن"]
+  },
+  {
+    "id": 17,
+    "name": "Fortnite",
+    "released": "2017-07-21",
+    "rating": 8.0,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/0/09/Fortnite_cover_art.jpg",
+    "genres": ["بقا", "اکشن"]
+  },
+  {
+    "id": 18,
+    "name": "The Witcher 3",
+    "released": "2015-05-19",
+    "rating": 9.4,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+    "genres": ["اکشن", "RPG"]
+  },
+  {
+    "id": 19,
+    "name": "BioShock Infinite",
+    "released": "2013-03-26",
+    "rating": 9.1,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/0/02/Bioshock_Infinite.jpg",
+    "genres": ["شوتر", "اکشن"]
+  },
+  {
+    "id": 20,
+    "name": "Starcraft",
+    "released": "1998-03-31",
+    "rating": 9.0,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/0/02/StarCraft_Box.jpg",
+    "genres": ["استراتژی"]
+  },
+  {
+    "id": 21,
+    "name": "Pac-Man",
+    "released": "1980-05-22",
+    "rating": 8.7,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/5/59/Pac-Man.PNG",
+    "genres": ["آرکید"]
+  },
+  {
+    "id": 22,
+    "name": "Sonic the Hedgehog",
+    "released": "1991-06-23",
+    "rating": 8.6,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/5/59/Sonic_the_Hedgehog_%28Game_Boy%29.jpg",
+    "genres": ["پلتفرمر"]
+  },
+  {
+    "id": 23,
+    "name": "Final Fantasy VII",
+    "released": "1997-01-31",
+    "rating": 9.3,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Final_Fantasy_VII_Box.jpg",
+    "genres": ["RPG"]
+  },
+  {
+    "id": 24,
+    "name": "Metal Gear Solid",
+    "released": "1998-09-03",
+    "rating": 9.1,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/7/72/MGS_Box.jpg",
+    "genres": ["اکشن", "ماجراجویی"]
+  },
+  {
+    "id": 25,
+    "name": "Rocket League",
+    "released": "2015-07-07",
+    "rating": 8.4,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Rocket_League_cover.jpg",
+    "genres": ["ورزشی", "اکشن"]
+  },
+  {
+    "id": 26,
+    "name": "League of Legends",
+    "released": "2009-10-27",
+    "rating": 8.5,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/7/7f/League_of_Legends_logo.png",
+    "genres": ["MOBA"]
+  },
+  {
+    "id": 27,
+    "name": "Overwatch",
+    "released": "2016-05-24",
+    "rating": 8.4,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_game_cover.jpg",
+    "genres": ["شوتر", "اکشن"]
+  },
+  {
+    "id": 28,
+    "name": "Minecraft Dungeons",
+    "released": "2020-05-26",
+    "rating": 7.8,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/a/a1/Minecraft_Dungeons.jpg",
+    "genres": ["اکشن", "ماجراجویی"]
+  },
+  {
+    "id": 29,
+    "name": "God of War (2018)",
+    "released": "2018-04-20",
+    "rating": 9.7,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg",
+    "genres": ["اکشن", "ماجراجویی"]
+  },
+  {
+    "id": 30,
+    "name": "Hades II (Preview)",
+    "released": "2025-11-01",
+    "rating": 9.0,
+    "background_image": "https://upload.wikimedia.org/wikipedia/en/4/4e/Hades_2_cover.jpg",
+    "genres": ["اکشن", "RPG"]
+  }
+]

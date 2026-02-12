@@ -1,0 +1,1 @@
+export { default as GameDetailPage } from "./views/index";
