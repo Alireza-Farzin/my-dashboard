@@ -23,7 +23,7 @@ export const LogoutDialog: React.FC<LogoutDialogProps> = ({ open, onOpenChange, 
                     <AlertDialogCancel className="mt-0">انصراف</AlertDialogCancel>
                     <AlertDialogAction
                         onClick={onLogout}
-                        className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                        className="bg-destructive text-destructive-foreground cursor-pointer hover:bg-destructive/90"
                     >
                         خروج
                     </AlertDialogAction>
