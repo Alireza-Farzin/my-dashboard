@@ -1,25 +1,25 @@
 import { Users, ShoppingBag, Gamepad2, Home, } from "lucide-react"
 export type MenuDataItem = {
-    hrefKey: string;
-    label: string;
-    icon?: React.ReactNode;
-    children?: MenuDataItem[];
+  hrefKey: string;
+  label: string;
+  icon?: React.ReactNode;
+  children?: MenuDataItem[];
 };
 
 export interface PanelMenuMock {
-    text: string;
-    icon: any;
-    link: string;
-    isLogout?: boolean;
-    visible: string[];
-    isExit?: boolean;
+  text: string;
+  icon: any;
+  link: string;
+  isLogout?: boolean;
+  visible: string[];
+  isExit?: boolean;
 }
 
 export const panelDrawerMock: PanelMenuMock[] = [
   {
     text: "کاربران فعال",
     icon: Users,
-    link: "/profile/edit",
+    link: "/users",
     visible: ["admin", "user"],
   },
   {

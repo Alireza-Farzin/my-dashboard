@@ -1,11 +1,5 @@
-import React from 'react'
+import { UsersPage } from "@/src/features/users";
 
-const page = () => {
-    return (
-        <div>
-            <h1>صفحه کاربران</h1>
-        </div>
-    )
+export default function Page() {  
+  return <UsersPage />
 }
-
-export default page
