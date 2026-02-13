@@ -16,17 +16,16 @@ export interface PanelMenuMock {
 }
 
 export const panelDrawerMock: PanelMenuMock[] = [
-
-  // {
-  //   text: "محصولات جدید",
-  //   icon: ShoppingBag,
-  //   link: "/profile/agencymanager",
-  //   visible: ["admin", "user"],
-  // },
   {
     text: "داشبورد",
     icon: Home,
     link: "/",
+    visible: ["admin", "user"],
+  },
+  {
+    text: "محصولات",
+    icon: ShoppingBag,
+    link: "/products",
     visible: ["admin", "user"],
   },
   {
