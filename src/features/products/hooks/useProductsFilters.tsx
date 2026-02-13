@@ -1,4 +1,4 @@
-// src/features/products/hooks/useProductsFilters.ts
+
 import { useState, useMemo } from 'react';
 import { Product } from './useProducts';
 import { SelectOption } from '@/src/components/AdvancedSelect/AdvancedSelect';

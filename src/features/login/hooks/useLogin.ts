@@ -15,7 +15,6 @@ export function useLogin() {
 
   const router = useRouter()
 
-  // Timer effect
   useEffect(() => {
     if (timeLeft <= 0) return
 

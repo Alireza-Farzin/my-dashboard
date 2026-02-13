@@ -76,7 +76,6 @@ export default function ProductsPage() {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">محصولات</h1>
@@ -99,12 +98,10 @@ export default function ProductsPage() {
         </Button>
       </div>
 
-      {/* فیلترها */}
       {showFilters && (
         <Card className="border-[#fcfcfc14] bg-[#171717]">
           <CardContent className="pt-6 space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {/* جستجو */}
               <div className="space-y-2">
                 <label className="text-sm font-medium">جستجو</label>
                 <div className="relative">

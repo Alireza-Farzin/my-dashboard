@@ -1,4 +1,3 @@
-// src/features/products/hooks/useProducts.ts
 import { useInfiniteQuery } from "@tanstack/react-query";
 
 export interface Product {

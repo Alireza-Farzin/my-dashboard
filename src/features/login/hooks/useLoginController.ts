@@ -16,7 +16,6 @@ export function useLoginController() {
   const [otp, setOtp] = useState("")
   const [timeLeft, setTimeLeft] = useState(120)
 
-  // Timer countdown
   useEffect(() => {
     if (step === "otp" && timeLeft > 0) {
       const timer = setInterval(() => {
@@ -26,17 +25,14 @@ export function useLoginController() {
     }
   }, [step, timeLeft])
 
-  // Phone input handler
   const handlePhoneChange = (value: string) => {
     setPhone(value)
   }
 
-  // OTP input handler
   const handleOtpChange = (value: string) => {
     setOtp(value)
   }
 
-  // Send OTP
   const handlePhoneSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
@@ -56,7 +52,6 @@ export function useLoginController() {
     })
   }
 
-  // Verify OTP
   const handleOtpSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
@@ -77,7 +72,6 @@ export function useLoginController() {
     })
   }
 
-  // Resend OTP
   const handleResend = () => {
     service.sendOtp(phone, {
       onSuccess: () => {
@@ -90,7 +84,6 @@ export function useLoginController() {
     })
   }
 
-  // Change phone
   const handleChangePhone = () => {
     setStep("phone")
     setOtp("")
