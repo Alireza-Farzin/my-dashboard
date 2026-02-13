@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { LogOut, X,Menu } from "lucide-react";
+import { LogOut, X, Menu } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,7 @@ import { LogoutDialog } from "../LogoutDialog/LogoutDialog";
 
 export function Sidebar() {
   const { handleLogout, showLogoutDialog, setShowLogoutDialog } = useLogout();
-  const [collapsed, setCollapsed] = useState(false); 
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <>
@@ -21,16 +21,16 @@ export function Sidebar() {
           "md:flex bg-[#171717]"
         )}
       >
-        <div className="p-4 flex justify-between items-center">
+        <Link href='/' className="p-4 flex justify-between items-center">
           {!collapsed && <h2 className="text-xl font-bold">My Dashboard</h2>}
           <Button
             variant="ghost"
             className="p-1 cursor-pointer"
             onClick={() => setCollapsed(!collapsed)}
           >
-            {collapsed ?<Menu />: <X />}
+            {collapsed ? <Menu /> : <X />}
           </Button>
-        </div>
+        </Link>
 
         <nav className="flex-1 px-2 py-4 flex flex-col gap-1">
           {panelDrawerMock.map((item) =>

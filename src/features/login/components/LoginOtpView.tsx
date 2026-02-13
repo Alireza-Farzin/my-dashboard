@@ -64,6 +64,7 @@ export default function LoginOtpView({
                   inputMode="numeric"
                   maxLength={6}
                   value={otp}
+                  autoFocus
                   onChange={(e) => onOtpChange(e.target.value.replace(/\D/g, "").slice(0, 6))}
                   className="h-16 text-center text-3xl font-bold tracking-[1rem] border-[#fcfcfc14] bg-background focus:border-primary/50 transition-colors placeholder:tracking-[0.5rem]"
                   placeholder="------"
